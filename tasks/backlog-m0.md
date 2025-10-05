@@ -5,16 +5,6 @@ Build the first production-ready core of Sala/Coworking — a Spring Boot monoli
 
 ---
 
-## 📚 Learning & Preparation
-- [ ] Read *Designing Data-Intensive Applications* (ch. 1–6) — data, transactions, architecture
-- [ ] Learn C4 Model (Context + Container) and draw diagrams
-- [ ] Read Spring Boot docs (web, data-jpa, validation, actuator, security)
-- [ ] Watch Amigoscode: Spring Boot Crash Course
-- [ ] Review Docker basics (Dockerfile, compose)
-- [ ] Summarize learnings in `/learning-log/`
-
----
-
 ## 🧩 Architecture Decisions (ADRs)
 - [ ] ADR-0001 — Monolith-First approach
 - [ ] ADR-0002 — Database choice: PostgreSQL + Flyway
