@@ -1,7 +1,7 @@
 # Backlog — M0: Architecture-First Monolith (Oct–Nov 2025)
 
 🎯 **Goal:**  
-Build the first production-ready core of Sala/Coworking — a Spring Boot monolith with solid architecture, data model, and observability.
+Build the first production-ready core of Coworking-Room — a Spring Boot monolith with solid architecture, data model, and observability.
 
 ---
 
@@ -16,7 +16,7 @@ Build the first production-ready core of Sala/Coworking — a Spring Boot monoli
 
 ## ⚙️ Implementation
 ### 1️⃣ Core setup
-- [ ] Create `sala-api` repo (Spring Boot 3 + Java 21)
+- [ ] Create `coworking-room-api` repo (Spring Boot 3 + Java 21)
 - [ ] Add `.gitignore`, `.editorconfig`, and base structure
 - [ ] Define entities: Resource, TimeSlot, Booking
 - [ ] Add Flyway migration `V1__init.sql`
