@@ -1,7 +1,7 @@
 # M0 — Architecture-First Monolith (Oct–Nov 2025)
 
 **Goal**  
-Build a monolith-first Spring Boot core for the Sala/Coworking system with focus on architecture, domain, and operability.
+Build a monolith-first Spring Boot core for the *Coworking Room – Reservation System* with focus on architecture, domain, and operability.
 
 **Scope**
 - Spring Boot + Postgres + Flyway
