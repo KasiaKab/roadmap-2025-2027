@@ -1,6 +1,6 @@
 # Roadmap 2025–2026
 
-🎯**Goal:** Build full-stack engineering foundations — from Java & Spring Boot to DevOps and AWS — by December 2026.  
+🎯**Goal:** Build full-stack engineering foundations — from Java & Spring Boot to DevOps & AWS.  
 This repository documents progress, milestones, architecture decisions, and learning artifacts along the way.
 
 ---
