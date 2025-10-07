@@ -1,10 +1,26 @@
-# 2025-10-05 — Day 1
+# Week 01 — 6–12 Oct 2025
+**Focus:** Establishing the architectural foundation — C4 diagrams, domain model design, and initial database migration.
 
-**Focus:** Roadmap repository setup.
 
-**Done:**
-- Created public repo `roadmap-2025-2026` on GitHub.
-- Added folder structure (`learning-log`, `milestones`, `tasks`, `decisions`, `designs`).
-- Completed `m0-foundations` and `backlog-m0` for phase `M0 — Architecture-First Monolith`.
-- Added placeholders for `milestones` (M1–M4) and `backlogs` (M1–M4).
-- Added the final `README.md` with goals, structure, and roadmap overview.
+---
+
+## ✅ Deliverables
+- [Output 1: file, commit, or diagram]
+- [Output 2: ADR, README, or pipeline update]
+- [Output 3: demo, release tag, or infrastructure change]
+
+---
+
+## 📝 Technical Notes
+- [Key insight or trade-off decided]
+- [Technical principle or problem solved]
+- [Architecture or operational improvement validated]
+
+---
+
+## ⏭️ Next
+- [Upcoming implementation or experiment]
+- [Refactor, test, or documentation task]
+
+---
+Last updated: 2025-10-06
