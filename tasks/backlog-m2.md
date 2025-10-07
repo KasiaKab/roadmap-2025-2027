@@ -1,7 +1,7 @@
 # Backlog — M2: AWS + Terraform (Feb – Apr 2026)
 
 **Goal:**  
-Deploy Sala/Coworking to AWS using IaC and learn AWS fundamentals.
+Deploy Coworkly to AWS using IaC and learn AWS fundamentals.
 
 **Draft scope:**
 - AWS Free Tier setup + IAM

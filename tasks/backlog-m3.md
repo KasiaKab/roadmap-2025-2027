@@ -1,7 +1,7 @@
 # Backlog — M3: Cloud Core (K8s + Helm + Monitoring) (May – Aug 2026)
 
 **Goal:**  
-Run Sala/Coworking on EKS with Helm charts and add monitoring.
+Run Coworkly on EKS with Helm charts and add monitoring.
 
 **Draft scope:**
 - Helm chart (dev/prod)
