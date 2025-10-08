@@ -42,4 +42,22 @@ roadmap-2025-2026/
  [Designs](designs/) – C4, network, and infrastructure diagrams
 
 ---
-Last updated: 2025-10-07
+
+## 🧩 Project Context: Coworkly
+
+All roadmap milestones are implemented through a single evolving system — **Coworkly**,  
+a Spring Boot application for coworking room reservations.
+
+Coworkly acts as a practical case study for my entire DevOps & Cloud journey:
+- **M00:** Architecture-first monolith (Spring Boot + PostgreSQL + Docker)
+- **M05:** Networking foundations (VPC + CIDR + DNS basics)
+- **M10–M40:** CI/CD, AWS, Terraform, Automation, K8s, Observability, and Security
+
+Each milestone adds a new engineering layer — from clean code and data design to  
+cloud deployment and cost-aware production readiness.
+
+📁 The application lives in a separate repository: [`coworkly-api`](https://github.com/KasiaKab/coworkly-api)
+
+
+---
+Last updated: 2025-10-08
