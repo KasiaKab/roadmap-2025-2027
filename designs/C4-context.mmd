@@ -1,0 +1,44 @@
+%% C4 – System Context Diagram for Coworkly
+%% File: designs/C4-context.mmd
+
+flowchart TB
+%% Persons
+    U[("User\n(Member/Guest)")]
+    A[("Admin\n(Ops/Manager)")]
+
+%% System under design
+    subgraph S[Coworkly System]
+        API[("Coworkly API\nSpring Boot Monolith")]
+    end
+
+%% External systems
+    WEB[["Coworkly Web\n(SPA/Next.js – future)"]]
+    MAIL[["Email/SMS Provider\n(e.g., SMTP/Mailgun)"]]
+    IDP[["Identity Provider\n(JWT now, OIDC later)"]]
+    DB[["PostgreSQL\n(Relational DB)"]]
+    OBS[["Observability Stack\n(Actuator/Micrometer → Grafana/EFK later)"]]
+    PAY[["Payment Provider\n(Stripe) – later"]]
+
+%% Relationships
+    U -->|Book desks/rooms,\nmanage bookings| WEB
+    WEB -->|HTTPS/REST| API
+    U -.Mobile/HTTP – optional future.-> API
+    A -->|Ops tasks,\nmanage resources| API
+
+    API -->|JDBC| DB
+    API -->|SMTP/HTTPS| MAIL
+    API -->|JWT now / OIDC later| IDP
+    API -->|Metrics/logs| OBS
+    API -. "Payments – optional future" .-> PAY
+
+%% Color and style definitions
+    classDef person fill:#fbe3eb,stroke:#f28cb5,stroke-width:1px,color:#2b2b2b;
+    classDef system fill:#dfeaff,stroke:#7fa3f8,stroke-width:1px,color:#1c1c1c;
+    classDef external fill:#e5f9f0,stroke:#50b37f,stroke-width:1px,color:#1a1a1a;
+    classDef connector stroke:#aaa,stroke-dasharray: 2 2;
+    style WEB stroke-width:2px,stroke-dasharray: 2
+
+%% Assign classes
+    class U,A person
+    class S,API system
+    class WEB,MAIL,IDP,DB,OBS,PAY external
