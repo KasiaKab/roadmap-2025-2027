@@ -1,4 +1,4 @@
-# ADR 000X — Decision Title
+# ADR 00X — Decision Title
 
 **Status:** Proposed | Accepted (self-reviewed) | Superseded  
 **Date:** YYYY-MM-DD
