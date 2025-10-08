@@ -6,7 +6,7 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 ---
 
 ## 🧩 Architecture Decisions (ADRs)
-- [ ] ADR-0001 — Monolith-First approach
+- [x] ADR-0001 — Monolith-First approach
 - [ ] ADR-0002 — Database choice: PostgreSQL + Flyway
 - [ ] ADR-0003 — REST design & error format
 - [ ] ADR-0004 — Security baseline (JWT later)
@@ -16,11 +16,17 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 
 ## ⚙️ Implementation
 ### 1️⃣ Core setup
-- [ ] Create `coworkly-api` repo (Spring Boot 3 + Java 21)
-- [ ] Add `.gitignore`, `.editorconfig`, and base structure
+- [x] Create `coworkly-api` repo (Spring Boot 3 + Java 21)
+- [x] Add `.gitignore`, `.editorconfig`, and base structure
 - [ ] Define entities: Resource, TimeSlot, Booking
 - [ ] Add Flyway migration `V1__init.sql`
 - [ ] Basic repository test (@DataJpaTest)
+
+### 🧱 System Design
+- [x] Study C4 model (Context + Container)
+- [x] Create `C4-context.mmd`
+- [x] Create `C4-container.mmd`
+- [ ] Design ERD (`erd-booking.mmd`)
 
 ### 2️⃣ REST API
 - [ ] Add `/resources` and `/bookings` endpoints
@@ -41,4 +47,4 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 
 ---
 
-🗓️ *Updated:* 2025-10-05  
+🗓️ *Updated:* 2025-10-08  
