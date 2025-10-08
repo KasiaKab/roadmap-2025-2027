@@ -1,0 +1,43 @@
+%% C4 – Container Diagram for Coworkly
+%% File: designs/C4-container.mmd
+
+flowchart TB
+%% Internal System
+    subgraph System["Coworkly System (v0.1.0)"]
+        subgraph API["Coworkly API — Spring Boot Monolith"]
+            Booking["Booking Module\n(Reservations, Desks)"]
+            Resource["Resource Module\n(Rooms, Amenities)"]
+            User["User Module\n(Auth, Members, Guests)"]
+            Admin["Admin Module\n(Ops, Dashboards)"]
+        end
+    end
+
+%% External Systems
+    DB[(PostgreSQL\nRelational Database)]
+    Mail["Email/SMS Provider\n(SMTP/Mailgun)"]
+    Identity["Identity Provider\n(JWT now / OIDC later)"]
+    Obs["Observability Stack\n(Actuator/Micrometer → Grafana/EFK later)"]
+    Payment["Payment Provider (Stripe)\n— future"]
+    Web["Coworkly Web (Next.js SPA)\n— future"]
+
+%% Connections
+    Web -.->|HTTPS/REST| API
+    API -->|JDBC| DB
+    API -->|SMTP/HTTPS| Mail
+    API -->|JWT| Identity
+    API -->|Metrics/Logs| Obs
+    API -.->|HTTPS/REST| Payment
+
+%% Styles
+    classDef person fill:#fbe3eb,stroke:#f28cb5,stroke-width:1px,color:#2b2b2b;
+    classDef system fill:#dfeaff,stroke:#7fa3f8,stroke-width:1px,color:#1c1c1c;
+    classDef external fill:#e5f9f0,stroke:#50b37f,stroke-width:1px,color:#1a1a1a;
+    classDef connector stroke:#aaa,stroke-dasharray: 2 2;
+    classDef systemBoundary fill:#fff9db,stroke:#ffe066,stroke-width:2px,color:#2b2b2b;
+    style Web stroke-width:2px,stroke-dasharray: 2;
+    style Payment stroke-width:2px,stroke-dasharray: 2;
+
+%% Assign classes
+    class API,Booking,Resource,User,Admin system
+    class DB,Mail,Identity,Obs,Payment,Web external
+    class System systemBoundary
