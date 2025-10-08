@@ -22,7 +22,7 @@ Later (M2–M3) I can split modules if needed.
 2. **Multiple small apps** — not needed until real traffic or scaling.
 
 ## Links
-- `designs/C4-context.mmd`
-- `designs/C4-container.mmd`
-- `milestones/m00-foundations.md`
-- `Coworkly - overview.pdf`
+- [C4 Context Diagram](../designs/C4-context.mmd)
+- [C4 Container Diagram](../designs/C4-container.mmd)
+- [Milestone M00 — Foundations](../milestones/m00-foundations.md)
+
