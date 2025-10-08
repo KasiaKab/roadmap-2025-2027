@@ -1,4 +1,4 @@
-# Backlog — M0: Architecture-First Monolith (Oct–Nov 2025)
+# Backlog — M00: Architecture-First Monolith (Oct–Nov 2025)
 
 🎯 **Goal:**  
 Build the first production-ready core of Coworkly — a Spring Boot monolith with solid architecture, data model, and observability.
@@ -6,11 +6,11 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 ---
 
 ## 🧩 Architecture Decisions (ADRs)
-- [x] ADR-0001 — Monolith-First approach
-- [ ] ADR-0002 — Database choice: PostgreSQL + Flyway
-- [ ] ADR-0003 — REST design & error format
-- [ ] ADR-0004 — Security baseline (JWT later)
-- [ ] ADR-0005 — CI/CD tool: GitHub Actions
+- [x] ADR-001 — Monolith-First approach
+- [ ] ADR-002 — Database choice: PostgreSQL + Flyway
+- [ ] ADR-003 — REST design & error format
+- [ ] ADR-004 — Security baseline (JWT later)
+- [ ] ADR-005 — CI/CD tool: GitHub Actions
 
 ---
 
