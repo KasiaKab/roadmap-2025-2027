@@ -1,0 +1,28 @@
+%% ERD – Booking Model
+%% File: designs/erd-booking.mmd
+erDiagram
+    RESOURCE ||--o{ TIMESLOT : has
+    TIMESLOT ||--o{ BOOKING : reserved_by
+
+    RESOURCE {
+        string id PK
+        string name
+        int capacity
+        string features
+    }
+
+    TIMESLOT {
+        string id PK
+        string resource_id FK
+        datetime start_at
+        datetime end_at
+        boolean is_active
+    }
+
+    BOOKING {
+        string id PK
+        string timeslot_id FK
+        string customer_email
+        datetime created_at
+        string status
+    }
