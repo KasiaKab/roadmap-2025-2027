@@ -1,4 +1,4 @@
-# ADR 0001 — Monolith-First Architecture
+# ADR 001 — Monolith-First Architecture
 
 **Status:** Accepted  
 **Date:** 2025-10-08
