@@ -5,3 +5,4 @@
 - [x] 2025-10-06 Study C4 model theory
 - [x] 2025-10-07 Create `C4-context.mmd` + `C4-container.mmd`
 - [x] 2025-10-08 Study ADR structure and examples + Add `ADR-001-monolith-first.md` (accepted) + Create `coworkly-api` repo
+- [x] 2025-10-09 Set up base project structure + configure local PostgreSQL (Docker + dev.yml) + add ADR-002 (accepted)
