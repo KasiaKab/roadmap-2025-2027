@@ -1,6 +1,6 @@
 # ADR 001 — Monolith-First Architecture
 
-**Status:** Accepted  
+**Status:** Accepted (self-reviewed)  
 **Date:** 2025-10-08
 
 ## Context
