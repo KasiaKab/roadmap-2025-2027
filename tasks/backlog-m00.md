@@ -7,7 +7,7 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 
 ## 🧩 Architecture Decisions (ADRs)
 - [x] ADR-001 — Monolith-First approach
-- [ ] ADR-002 — Database choice: PostgreSQL + Flyway
+- [x] ADR-002 — Database choice: PostgreSQL + Flyway (dev via Docker, Flyway pending)
 - [ ] ADR-003 — REST design & error format
 - [ ] ADR-004 — Security baseline (JWT later)
 - [ ] ADR-005 — CI/CD tool: GitHub Actions
@@ -26,7 +26,7 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 - [x] Study C4 model (Context + Container)
 - [x] Create `C4-context.mmd`
 - [x] Create `C4-container.mmd`
-- [ ] Design ERD (`erd-booking.mmd`)
+- [x] Design ERD (`erd-booking.mmd`)
 
 ### 2️⃣ REST API
 - [ ] Add `/resources` and `/bookings` endpoints
@@ -37,8 +37,8 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 ### 3️⃣ Observability & Docker
 - [ ] Enable Actuator (health/info/metrics)
 - [ ] Add Micrometer + JSON logging with traceId
-- [ ] Write Dockerfile + docker-compose (app + Postgres)
-- [ ] Spring profiles: `dev` (H2), `local` (Postgres)
+- [x] Docker Compose: Postgres (local dev)
+- [x] Spring profiles: `dev` (Postgres), `no-db` (API-only)
 
 ### 4️⃣ Release
 - [ ] Update README (architecture, run guide)
@@ -47,4 +47,4 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 
 ---
 
-🗓️ *Updated:* 2025-10-08  
+🗓️ *Updated:* 2025-10-09  
