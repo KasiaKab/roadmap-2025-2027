@@ -18,8 +18,8 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 ### 1️⃣ Core setup
 - [x] Create `coworkly-api` repo (Spring Boot 3 + Java 21)
 - [x] Add `.gitignore`, `.editorconfig`, and base structure
-- [ ] Define entities: Resource, TimeSlot, Booking
-- [ ] Add Flyway migration `V1__init.sql`
+- [x] Define entities: Resource, Booking
+- [x] Add Flyway migration `V1__init.sql`
 - [ ] Basic repository test (@DataJpaTest)
 
 ### 🧱 System Design
@@ -47,4 +47,4 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 
 ---
 
-🗓️ *Updated:* 2025-10-09  
+🗓️ *Updated:* 2025-10-10  
