@@ -23,5 +23,5 @@ It must support relations (1-n, n-n) and allow versioned schema changes.
 
 ## Links
 - [ERD — Booking Model](../designs/erd-booking.mmd)
-- [Migration V1__init.sql](../src/main/resources/db/migration/V1__init.sql)
+- [Migration V1__init.sql](https://github.com/KasiaKab/coworkly-api/blob/dev/src/main/resources/db/migration/V1__init.sql)
 - [Milestone M00 — Foundations](../milestones/m00-foundations.md)
