@@ -10,3 +10,6 @@
   &nbsp;&nbsp;→ Add Flyway dependencies and migration `V1__init.sql`  
   &nbsp;&nbsp;→ Verified DB connection and migration execution  
   &nbsp;&nbsp;→ Confirmed table creation (`resource`, `booking`) via Docker PostgreSQL
+- [x] 2025-10-11 Verify BookingRepository with @DataJpaTest  
+  &nbsp;&nbsp;→ Added `BookingRepositoryTest.java`  
+  &nbsp;&nbsp;→ Confirmed Flyway migration and entity mapping validity
