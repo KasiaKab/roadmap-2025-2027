@@ -20,7 +20,7 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 - [x] Add `.gitignore`, `.editorconfig`, and base structure
 - [x] Define entities: Resource, Booking
 - [x] Add Flyway migration `V1__init.sql`
-- [ ] Basic repository test (@DataJpaTest)
+- [x] Basic repository test (@DataJpaTest)
 
 ### 🧱 System Design
 - [x] Study C4 model (Context + Container)
@@ -47,4 +47,4 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 
 ---
 
-🗓️ *Updated:* 2025-10-10  
+🗓️ *Updated:* 2025-10-11  
