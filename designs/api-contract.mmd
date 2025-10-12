@@ -1,0 +1,35 @@
+%% Coworkly — API Contract Diagram
+%% File: designs/api-contract.mmd
+
+flowchart TB
+    APP["Coworkly Web App"]
+
+%% --- USER SIDE ---
+    subgraph USER["User"]
+        direction TB
+        U_GET["GET\n/resources\n/resources/{id}/availability\n/bookings/{id}"]
+        U_POST["POST\n/bookings (Idempotency-Key)"]
+        U_DELETE["DELETE\n/bookings/{id}"]
+    end
+
+%% --- ADMIN SIDE ---
+    subgraph ADMIN["Admin"]
+        direction TB
+        A_GET["GET\n/resources\n/timeslots\n/bookings?page&size"]
+        A_POST["POST\n/resources\n/timeslots"]
+        A_PUT["PUT\n/resources/{id}\n/timeslots/{id}"]
+        A_DELETE["DELETE\n/resources/{id}\n/timeslots/{id}"]
+    end
+
+%% --- FLOW ---
+    APP --> USER
+    APP --> ADMIN
+
+    USER --> U_GET
+    USER --> U_POST
+    USER --> U_DELETE
+
+    ADMIN --> A_GET
+    ADMIN --> A_POST
+    ADMIN --> A_PUT
+    ADMIN --> A_DELETE
