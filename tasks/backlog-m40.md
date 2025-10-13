@@ -1,4 +1,4 @@
-# Backlog — M4: Security + FinOps + AWS SAA (Sep – Dec 2026)
+# Backlog — M4: Security + FinOps + AWS SAA
 
 **Goal:**  
 Add security layer, cost optimization, and complete AWS SAA certification.

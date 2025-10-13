@@ -1,4 +1,4 @@
-# Backlog — M3: Cloud Core (K8s + Helm + Monitoring) (May – Aug 2026)
+# Backlog — M3: Cloud Core (K8s + Helm + Monitoring)
 
 **Goal:**  
 Run Coworkly on EKS with Helm charts and add monitoring.

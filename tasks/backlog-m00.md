@@ -1,4 +1,4 @@
-# Backlog — M00: Architecture-First Monolith (Oct–Nov 2025)
+# Backlog — M00: Architecture-First Monolith
 
 🎯 **Goal:**  
 Build the first production-ready core of Coworkly — a Spring Boot monolith with solid architecture, data model, and observability.

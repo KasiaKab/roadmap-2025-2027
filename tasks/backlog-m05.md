@@ -1,4 +1,4 @@
-# Backlog — M05: IT & Networking Foundations (Nov 2025)
+# Backlog — M05: IT & Networking Foundations
 
 **Goal:**  
 Build a solid understanding of networking, cloud fundamentals, and VPC design before moving into DevOps.

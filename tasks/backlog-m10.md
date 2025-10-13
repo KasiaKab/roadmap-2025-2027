@@ -1,4 +1,4 @@
-# Backlog — M1: DevOps Fundamentals (Dec 2025 – Feb 2026)
+# Backlog — M1: DevOps Fundamentals
 
 **Goal:**  
 Learn Linux, Git, Docker and CI/CD; integrate pipeline into Sala/Coworking.

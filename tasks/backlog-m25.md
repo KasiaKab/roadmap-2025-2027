@@ -1,4 +1,4 @@
-# Backlog — M25: Automation & Config Management (Python + Ansible) (May 2026)
+# Backlog — M25: Automation & Config Management (Python + Ansible)
 
 **Goal:**  
 Automate AWS infrastructure management and configuration using Python, Ansible, and Terraform integration.

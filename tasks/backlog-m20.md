@@ -1,4 +1,4 @@
-# Backlog — M2: AWS + Terraform (Feb – Apr 2026)
+# Backlog — M2: AWS + Terraform
 
 **Goal:**  
 Deploy Coworkly to AWS using IaC and learn AWS fundamentals.

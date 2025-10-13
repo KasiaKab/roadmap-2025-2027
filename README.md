@@ -1,4 +1,4 @@
-# Roadmap 2025–2026
+# Roadmap 2025–2027
 
 **Goal:** Build full-stack engineering foundations — from Java & Spring Boot to DevOps & AWS.  
 This repository documents progress, milestones, architecture decisions, and learning artifacts along the way.
@@ -9,14 +9,14 @@ This repository documents progress, milestones, architecture decisions, and lear
 This roadmap follows a multi-stage engineering path, focusing on both software design and cloud infrastructure skills.
 
 | Phase | Focus | Period |
-|-------|--------|---------|
-| **M00** | Architecture-First Monolith | Oct – Dec 2025 |
-| **M05** | IT & Networking Fundamentals | Dec 2025 |
-| **M10** | DevOps Fundamentals (CI/CD, Docker, GitHub Actions + Jenkins intro) | Dec 2025 – Feb 2026 |
-| **M20** | AWS Fundamentals + Terraform (CLF-C02) | Mar – May 2026 |
-| **M25** | Automation & Config Mgmt (Python + Ansible) | May – Jun 2026 |
-| **M30** | Cloud Core (K8s + Helm + Monitoring + Logging) | Jun – Oct 2026 |
-| **M40** | Security & FinOps + AWS SAA Certification | Oct 2026 – Feb 2027 |
+|-------|--------|------------------|
+| **M00** | Architecture-First Monolith | **Oct – Dec 2025 (10 weeks)** |
+| **M05** | IT & Networking Foundations | **Dec 2025 – Jan 2026 (2 weeks)** |
+| **M10** | DevOps Fundamentals (CI/CD, Docker, GitHub Actions, Jenkins intro) | **Jan – Apr 2026 (12–14 weeks)** |
+| **M20** | AWS + Terraform (Cloud Practitioner + IaC) | **Apr – Jul 2026 (12–14 weeks)** |
+| **M25** | Automation & Config Mgmt (Python + Ansible) | **Jul – Aug 2026 (6 weeks)** |
+| **M30** | Cloud Core (K8s + Helm + Monitoring + Logging) | **Sep 2026 – Jan 2027 (18 weeks)** |
+| **M40** | Security + FinOps + AWS SAA Certification | **Feb – Jun 2027 (20 weeks)** |
 
 ---
 
@@ -24,7 +24,7 @@ This roadmap follows a multi-stage engineering path, focusing on both software d
 The repository is organized as follows:
 
 ```text
-roadmap-2025-2026/
+roadmap-2025-2027/
 ├─ README.md                  → overview and structure
 ├─ engineering-log/           → daily or weekly progress notes
 ├─ milestones/                → key goals & deliverables per phase
@@ -60,4 +60,4 @@ cloud deployment and cost-aware production readiness.
 
 
 ---
-Last updated: 2025-10-08
+Last updated: 2025-10-13
