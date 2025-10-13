@@ -10,13 +10,13 @@ This roadmap follows a multi-stage engineering path, focusing on both software d
 
 | Phase | Focus | Period |
 |-------|--------|------------------|
-| **M00** | Architecture-First Monolith | **Oct – Dec 2025 (10 weeks)** |
-| **M05** | IT & Networking Foundations | **Dec 2025 – Jan 2026 (2 weeks)** |
-| **M10** | DevOps Fundamentals (CI/CD, Docker, GitHub Actions, Jenkins intro) | **Jan – Apr 2026 (12–14 weeks)** |
-| **M20** | AWS + Terraform (Cloud Practitioner + IaC) | **Apr – Jul 2026 (12–14 weeks)** |
-| **M25** | Automation & Config Mgmt (Python + Ansible) | **Jul – Aug 2026 (6 weeks)** |
-| **M30** | Cloud Core (K8s + Helm + Monitoring + Logging) | **Sep 2026 – Jan 2027 (18 weeks)** |
-| **M40** | Security + FinOps + AWS SAA Certification | **Feb – Jun 2027 (20 weeks)** |
+| 🧱 **M00** | Architecture-First Monolith | **Oct – Dec 2025 (10 weeks)** |
+| 🌐 **M05** | IT & Networking Foundations | **Dec 2025 – Jan 2026 (2 weeks)** |
+| ⚙️ **M10** | DevOps Fundamentals (CI/CD, Docker, GitHub Actions, Jenkins intro) | **Jan – Apr 2026 (12–14 weeks)** |
+| ☁️ **M20** | AWS + Terraform (Cloud Practitioner + IaC) | **Apr – Jul 2026 (12–14 weeks)** |
+| 🤖 **M25** | Automation & Config Mgmt (Python + Ansible) | **Jul – Aug 2026 (6 weeks)** |
+| ☸️ **M30** | Cloud Core (K8s + Helm + Monitoring + Logging) | **Sep 2026 – Jan 2027 (18 weeks)** |
+| 🛡️ **M40** | Security + FinOps + AWS SAA Certification | **Feb – Jun 2027 (20 weeks)** |
 
 ---
 
