@@ -29,10 +29,13 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 - [x] Design ERD (`erd-booking.mmd`)
 
 ### 2️⃣ REST API
-- [ ] Add `/resources` and `/bookings` endpoints
-- [ ] Support idempotency-key for POST /bookings
-- [ ] Global error handler + consistent JSON payload
+- [x] API contract draft (`designs/api-contract.mmd`) — endpoints (`/resources`, `/bookings`, `/resources/{id}/availability`)
+- [x] DTOs: `ResourceDto`, `TimeSlotDto`, `AvailabilitySlotDto`, `BookingDto`, `BookingRequest`, `BookingResponse`
+- [x] Mappers: `ResourceMapper`, `TimeSlotMapper`, `BookingMapper`
+- [ ] Controllers: `ResourceController`, `BookingController`
 - [ ] @WebMvcTest for one controller
+- [ ] Idempotency-Key handling in `POST /bookings` (service + persistence)
+- [ ] Global error handler + consistent JSON payload
 
 ### 3️⃣ Observability & Docker
 - [ ] Enable Actuator (health/info/metrics)
@@ -47,4 +50,4 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 
 ---
 
-🗓️ *Updated:* 2025-10-11  
+🗓️ *Updated:* 2025-10-13  
