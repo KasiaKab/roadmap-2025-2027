@@ -13,3 +13,9 @@
 - [x] 2025-10-11 Verify BookingRepository with @DataJpaTest  
   &nbsp;&nbsp;→ Added `BookingRepositoryTest.java`  
   &nbsp;&nbsp;→ Confirmed Flyway migration and entity mapping validity
+- [x] 2025-10-12 API layer scaffolding  
+  → Added API contract draft (`designs/api-contract.mmd`)  
+  → Implemented DTOs (`ResourceDto`, `TimeSlotDto`, `AvailabilitySlotDto`, `BookingDto`, `BookingRequest`, `BookingResponse`)  
+- [x] 2025-10-13 Implemented mappers and accepted ADR-003  
+  → Added `ResourceMapper`, `TimeSlotMapper`, `BookingMapper`  
+  → Added `ADR-003-rest-design-plan.md` (API structure defined, controllers pending)
