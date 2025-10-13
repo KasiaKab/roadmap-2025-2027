@@ -1,4 +1,4 @@
-# M0 — Architecture-First Monolith (Oct–Nov 2025)
+# M00 — Architecture-First Monolith (Oct–Nov 2025)
 
 **Goal**  
 Build a monolith-first Spring Boot core for the *Coworkly* with focus on architecture, domain, and operability.
