@@ -8,7 +8,7 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 ## 🧩 Architecture Decisions (ADRs)
 - [x] ADR-001 — Monolith-First approach
 - [x] ADR-002 — Database choice: PostgreSQL + Flyway (dev via Docker, Flyway pending)
-- [ ] ADR-003 — REST design & error format
+- [x] ADR-003 — REST design & error format (*in progress*)
 - [ ] ADR-004 — Security baseline (JWT later)
 - [ ] ADR-005 — CI/CD tool: GitHub Actions
 
@@ -23,19 +23,24 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 - [x] Basic repository test (@DataJpaTest)
 
 ### 🧱 System Design
-- [x] Study C4 model (Context + Container)
-- [x] Create `C4-context.mmd`
-- [x] Create `C4-container.mmd`
-- [x] Design ERD (`erd-booking.mmd`)
+- `C4-context.mmd` – high-level view
+- `C4-container.mmd` – backend major container
+- `erd-booking.mmd` – relational model
+- `api-layer-architecture.png` – REST layer interaction
+- `api-sequence-booking.png` – booking request flow
+- `architecture-overlap.png` – architecture styles overlap (internal note)
 
 ### 2️⃣ REST API
 - [x] API contract draft (`designs/api-contract.mmd`) — endpoints (`/resources`, `/bookings`, `/resources/{id}/availability`)
 - [x] DTOs: `ResourceDto`, `TimeSlotDto`, `AvailabilitySlotDto`, `BookingDto`, `BookingRequest`, `BookingResponse`
 - [x] Mappers: `ResourceMapper`, `TimeSlotMapper`, `BookingMapper`
-- [ ] Controllers: `ResourceController`, `BookingController`
-- [ ] @WebMvcTest for one controller
-- [ ] Idempotency-Key handling in `POST /bookings` (service + persistence)
-- [ ] Global error handler + consistent JSON payload
+- [x] Controllers: `ResourceController`, `BookingController`
+- [x] Global error handler (`GlobalExceptionHandler`) + consistent `{code,message}` JSON payload
+- [x] Services: `ResourceService`, `BookingService` (with collision check)
+- [ ] `@WebMvcTest` for booking flow (happy + edge paths)
+- [ ] Idempotency-Key handling in `POST /bookings` (filter + persistence)
+- [ ] OpenAPI spec update for controllers + errors
+- [ ] Sequence diagram `api-sequence.mmd`
 
 ### 3️⃣ Observability & Docker
 - [ ] Enable Actuator (health/info/metrics)
@@ -50,4 +55,4 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 
 ---
 
-🗓️ *Updated:* 2025-10-13  
+🗓️ *Updated:* 2025-10-17  

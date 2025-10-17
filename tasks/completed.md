@@ -19,3 +19,11 @@
 - [x] 2025-10-13 Implemented mappers and accepted ADR-003  
   → Added `ResourceMapper`, `TimeSlotMapper`, `BookingMapper`  
   → Added `ADR-003-rest-design-plan.md` (API structure defined, controllers pending)
+- [x] 2025-10-16 Implemented exception handling and booking service logic  
+  &nbsp;&nbsp;→ Added domain exceptions (`NotFoundException`, `SlotAlreadyBookedException`)  
+  &nbsp;&nbsp;→ Implemented `BookingService` and `ResourceService` with validation checks
+- [x] 2025-10-17 Implemented REST controllers for core resources  
+  &nbsp;&nbsp;→ Added `BookingController` and `ResourceController`  
+  &nbsp;&nbsp;→ Integrated DTO mapping 
+  &nbsp;&nbsp;→ Verified end-to-end flow (controller → service → repository)  
+  &nbsp;&nbsp;→ Updated sequence & API diagrams (`designs/api-sequence-booking.png`, `designs/api-layer-architecture.png`)
