@@ -1,0 +1,29 @@
+%%Sequence Diagram: POST /bookings flow
+%% File: designs/api-sequence-booking.mmd
+%% Purpose: Visualize full data flow for creating a booking —
+%% from REST API (Controller + DTO) through domain and repository layers to database and back.
+
+sequenceDiagram
+    participant Client as Client
+    participant Ctr as BookingController
+    participant Map as BookingMapper
+    participant Svc as BookingService
+    participant Repo as BookingRepository
+    participant DB as PostgreSQL
+
+    Client->>Ctr: POST /bookings (BookingRequest JSON)
+    note right of Ctr: @Valid + parsing do BookingRequest
+
+    Ctr->>Map: toEntity(request)
+    Map-->>Ctr: Booking (Entity)
+
+    Ctr->>Svc: create(Booking)
+    Svc->>Repo: save(Booking)
+    Repo->>DB: INSERT booking + FK (resource, timeslot)
+    DB-->>Repo: persisted row (id, timestamps)
+    Repo-->>Svc: Booking (persisted)
+    Svc-->>Ctr: Booking
+
+    Ctr->>Map: toResponse(Booking)
+    Map-->>Ctr: BookingResponse (DTO)
+    Ctr-->>Client: 201 Created + BookingResponse JSON

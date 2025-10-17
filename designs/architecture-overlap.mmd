@@ -1,0 +1,46 @@
+%% Coworkly — Styles Overlap (Client–Server + REST + Layered inside Monolith)
+%% File: designs/architecture-overlap.mmd
+%% Purpose: Shows how multiple architectural styles (Client–Server, REST, Layered) coexist within the current Monolithic design.
+
+flowchart LR
+%% Client–Server (Client)
+    subgraph CLIENT["Client (Client–Server)"]
+        FE["Frontend / Postman / CLI"]
+    end
+
+%% Monolith boundary
+    subgraph MONO["Monolith (Spring Boot App)"]
+    %% RESTful + Layered: API layer
+        subgraph API["RESTful Interface — API Layer"]
+            Ctr["Controller\n(ResourceController, BookingController)"]
+            DTO["DTOs\n(ResourceDto, TimeSlotDto,\nBookingRequest, BookingResponse)"]
+        end
+
+    %% Layered: Application/Domain
+        subgraph APP["Application / Domain Layer"]
+            Svc["Services\n(BookingService, ResourceService)"]
+            Rules["Domain Rules / Policies"]
+            Ent["Entities\n(Resource, TimeSlot, Booking)"]
+        end
+
+    %% Layered: Data access
+        subgraph DATA["Data Access Layer"]
+            Repo["Repositories\n(ResourceRepository,\nTimeSlotRepository,\nBookingRepository)"]
+            DB[(PostgreSQL)]
+        end
+    end
+
+%% RESTful flow over HTTP
+    FE -->|HTTP/JSON| Ctr
+    Ctr -->|parse / validate| DTO
+    Ctr --> Svc
+    Svc --> Rules
+    Svc --> Repo
+    Repo --> DB
+
+%% Response path
+    DB --> Repo
+    Repo --> Svc
+    Svc --> DTO
+    DTO --> Ctr
+    Ctr -->|HTTP/JSON| FE

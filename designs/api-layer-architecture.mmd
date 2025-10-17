@@ -1,0 +1,44 @@
+%% API Flow Diagram: Architecture overview
+%% File: designs/api-layer-architecture.mmd
+%% Purpose: Show data and dependency flow between API layer (Controller + DTO + Mapper),
+%% application services, domain model, and persistence layer.
+
+flowchart LR
+    subgraph Client["Client (HTTP)"]
+        UI["Frontend / API Client"]
+    end
+
+    subgraph API["API Layer (web)"]
+        Ctr["Controller<br/><small>ResourceController / BookingController</small>"]
+        DTO["DTOs<br/><small>ResourceDto, TimeSlotDto,<br/>BookingRequest, BookingResponse</small>"]
+        Map["Mapper<br/><small>ResourceMapper / TimeSlotMapper / BookingMapper</small>"]
+    end
+
+    subgraph APP["Application Layer (services)"]
+        Svc["Services<br/><small>BookingService, ResourceService</small>"]
+    end
+
+    subgraph DOMAIN["Domain Model"]
+        Ent["Entities<br/><small>Resource, TimeSlot, Booking</small>"]
+        Rules["Domain Rules<br/><small>(Validation / Policies)</small>"]
+    end
+
+    subgraph PERSIST["Persistence"]
+        Repo["Repositories<br/><small>ResourceRepository,<br/>TimeSlotRepository,<br/>BookingRepository</small>"]
+        DB[(PostgreSQL)]
+    end
+
+    UI -->|HTTP JSON| Ctr
+    Ctr -->|parse/validate| DTO
+    Ctr -->|toDomain| Map
+    Map -->|DTO ➜ Entity| Svc
+    Svc -->|invoke| Rules
+    Svc --> Repo
+    Repo --> Ent
+    Repo --> DB
+
+    DB --> Repo
+    Repo --> Svc
+    Svc --> Map
+    Map -->|Entity ➜ DTO| Ctr
+    Ctr -->|HTTP JSON| UI
