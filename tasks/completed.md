@@ -27,3 +27,9 @@
   &nbsp;&nbsp;→ Integrated DTO mapping 
   &nbsp;&nbsp;→ Verified end-to-end flow (controller → service → repository)  
   &nbsp;&nbsp;→ Updated sequence & API diagrams (`designs/api-sequence-booking.png`, `designs/api-layer-architecture.png`)
+- [x] 2025-10-19 Added minimal `GlobalExceptionHandler`  
+  &nbsp;&nbsp;→ Unified JSON format `{code, message}`  
+  &nbsp;&nbsp;→ Mapped `NotFoundException` → **404**, `SlotAlreadyBookedException` → **409**, and generic → **500**
+- [x] 2025-10-20 Added Flyway migration `V2__add_booking_time_slot_fk.sql` + entity sync  
+  &nbsp;&nbsp;→Added `@PrePersist` default status
+- [x] 2025-10-21 Added Flyway migration `V3__add_idempotency_key_to_booking.sql`

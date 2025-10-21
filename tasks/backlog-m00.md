@@ -8,7 +8,7 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 ## 🧩 Architecture Decisions (ADRs)
 - [x] ADR-001 — Monolith-First approach
 - [x] ADR-002 — Database choice: PostgreSQL + Flyway (dev via Docker, Flyway pending)
-- [x] ADR-003 — REST design & error format (*in progress*)
+- [x] ADR-003 — REST design & error format 
 - [ ] ADR-004 — Security baseline (JWT later)
 - [ ] ADR-005 — CI/CD tool: GitHub Actions
 
@@ -20,6 +20,8 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 - [x] Add `.gitignore`, `.editorconfig`, and base structure
 - [x] Define entities: Resource, Booking
 - [x] Add Flyway migration `V1__init.sql`
+- [x] Add Flyway migration `V2__add_booking_time_slot_fk.sql`
+- [x] Add Flyway migration `V3__add_idempotency_key_to_booking.sql`
 - [x] Basic repository test (@DataJpaTest)
 
 ### 🧱 System Design
@@ -37,8 +39,8 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 - [x] Controllers: `ResourceController`, `BookingController`
 - [x] Global error handler (`GlobalExceptionHandler`) + consistent `{code,message}` JSON payload
 - [x] Services: `ResourceService`, `BookingService` (with collision check)
-- [ ] `@WebMvcTest` for booking flow (happy + edge paths)
-- [ ] Idempotency-Key handling in `POST /bookings` (filter + persistence)
+- [X] Idempotency-Key handling in `POST /bookings` (filter + persistence)
+- [ ] `@WebMvcTest` for booking flow (persistent key + 200/201 logic)
 - [ ] OpenAPI spec update for controllers + errors
 - [ ] Sequence diagram `api-sequence.mmd`
 
@@ -55,4 +57,4 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 
 ---
 
-🗓️ *Updated:* 2025-10-17  
+🗓️ *Updated:* 2025-10-21  
