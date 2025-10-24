@@ -40,6 +40,7 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 - [x] Global error handler (`GlobalExceptionHandler`) + consistent `{code,message}` JSON payload
 - [x] Services: `ResourceService`, `BookingService` (with collision check)
 - [X] Idempotency-Key handling in `POST /bookings` (filter + persistence)
+- [x] Manual verification of all endpoints in Postman (400/404/409 cases)
 - [ ] `@WebMvcTest` for booking flow (persistent key + 200/201 logic)
 - [ ] OpenAPI spec update for controllers + errors
 - [ ] Sequence diagram `api-sequence.mmd`
@@ -57,4 +58,4 @@ Build the first production-ready core of Coworkly — a Spring Boot monolith wit
 
 ---
 
-🗓️ *Updated:* 2025-10-21  
+🗓️ *Updated:* 2025-10-24  
